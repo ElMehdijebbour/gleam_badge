@@ -1,0 +1,8 @@
+/* 
+  This CSS rule defines styling for the ".avatar" class.
+  It adds a margin-bottom of 20px to elements with this class.
+  Adjustments to the margin can be made as necessary for spacing purposes.
+*/
+.avatar {
+  margin-bottom: 20px; /* Adjust as necessary */
+}

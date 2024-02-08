@@ -1,0 +1,72 @@
+/* File: src/components/ImageUpload.css */
+
+/* Styles for the main container of the image upload component */
+.image-upload-container {
+  text-align: center; /* Center the content */
+  padding: 20px; /* Add padding around the container */
+  display: flex; /* Use flexbox */
+  flex-direction: column; /* Arrange items in a column */
+  align-items: center; /* Center items horizontally in the column */
+  justify-content: space-evenly; /* Space items evenly in the container */
+  gap:  100px; /* Adjust the gap between children */
+}
+
+/* Set child elements of the container to fill its width */
+.image-upload-container > * {
+  width: 100%;
+}
+
+/* Styles for the avatar preview container */
+.avatar-preview {
+  margin-top: 20px; /* Add margin to the top */
+  width: 512px; /* Set fixed width */
+  height: 512px; /* Set fixed height */
+  position: relative; /* Positioning context for child elements */
+  border-radius: 50%; /* Keeps the circular shape */
+  overflow: hidden; /* Hide overflowing content */
+  display: flex; /* Use flexbox for alignment */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+  border: 5px solid #FFC107; /* Bright border color for contrast and vibrancy */
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for the avatar preview */
+.avatar-preview:hover {
+  transform: scale(1.15); /* Slightly enlarges the avatar on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Adds depth with shadow on hover */
+}
+
+/* Styles for the avatar image within the preview */
+.avatar-image {
+  max-width: 100%; /* Ensure image does not exceed container width */
+  max-height: 100%; /* Ensure image does not exceed container height */
+  /* Remove border-radius here if your container already ensures the circular shape */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 767px) {
+  .title, .avatar, .image-upload-container {
+    margin-bottom: 20px; /* Ensures space between stacked elements on small screens */
+  }
+}
+
+
+
+.error-message {
+  color: #D32F2F; /* Error color */
+  background-color: #FFCDD2; /* Light background to make the message stand out */
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.error-message::before {
+  content: "⚠️ Attention: "; /* Adds an attention icon */
+  display: inline;
+  font-size: 20px;
+}

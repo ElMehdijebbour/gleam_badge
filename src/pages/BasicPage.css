@@ -1,0 +1,20 @@
+/* BasicPage.css */
+
+
+.basic-page {
+
+  background-color: #637A9F; /* Set the background to white */
+  max-width: 100%; /* Maximum width of the content area */
+  min-height: 100vh; /* Minimum height to ensure it covers most of the viewport */
+  padding-top: 20px; /* Adds space at the top */
+  padding-bottom: 20px; /* Adds space at the bottom */  margin: auto; /* Auto margins for centering horizontally */
+  display: flex; /* Use flexbox for centering */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+
+}
+
+
+
+
