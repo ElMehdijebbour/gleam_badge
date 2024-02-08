@@ -1,0 +1,42 @@
+/* Title.css */
+
+/* Import Montserrat font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+/* Styles for the title container */
+.title-container {
+  text-align: center; /* Center the text within the title container */
+  margin-top: 20px; /* Add top margin for spacing */
+  margin-bottom: 20px; /* Add bottom margin for spacing */
+  font-family: 'Montserrat', sans-serif; /* Apply Montserrat font to the title container */
+}
+
+/* Styles for the main title */
+.main-title {
+  font-size: 10rem; /* Set the font size for the main title */
+  line-height: 1; /* Adjust the line spacing between "Badge" and "maker" */
+  margin: 0; /* Remove default margin */
+  font-weight: bold; /* Make the title bold */
+}
+
+/* Styles for the yellow text */
+.yellow-text {
+  color: #E7B431; /* Yellow color for the word "Badge" */
+}
+
+/* Styles for the white text */
+.white-text {
+  color: #FFFFFF; /* White color for the word "maker" */
+}
+
+/* Styles for the subtitle */
+.subtitle {
+  font-size: 2rem; /* Set the font size for the subtitle */
+  color: #FFF3CF; /* Subtitle color */
+  margin-top: 10px; /* Add top margin for spacing */
+}
+
+/* Styles for the spans inside the main title */
+.main-title span {
+  display: block; /* Make each span element a block element */
+}
