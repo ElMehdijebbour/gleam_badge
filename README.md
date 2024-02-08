@@ -5,7 +5,7 @@
   <div align="center">
     <b><font size="5">Gleam Badge</font></b>
     <sup>
-      <a href="https://gleambadge.web.app/#/login">
+      <a href="https://ElMehdijebbour.github.io/gleam_badge">
         <i><font size="4">Explore Now!</font></i>
       </a>
     </sup>
