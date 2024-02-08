@@ -1,7 +1,7 @@
 // File: src/components/UploadButton.js
 
 import React from 'react';
-import './UploadButton.css'; // Import the CSS file for styling
+import './Buttons.css'; // Import the CSS file for styling
 
 /**
  * UploadButton component represents a button for uploading files.

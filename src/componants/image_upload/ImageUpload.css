@@ -50,3 +50,23 @@
     margin-bottom: 20px; /* Ensures space between stacked elements on small screens */
   }
 }
+
+
+
+.error-message {
+  color: #D32F2F; /* Error color */
+  background-color: #FFCDD2; /* Light background to make the message stand out */
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 20px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.error-message::before {
+  content: "⚠️ Attention: "; /* Adds an attention icon */
+  display: inline;
+  font-size: 20px;
+}

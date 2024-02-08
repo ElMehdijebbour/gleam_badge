@@ -1,20 +1,29 @@
-// File: src/utils/verifyImage.js
+// Use this code in verifyImage.js
 
-async function verifyImage(imageFile) {
+/**
+ * Verify the dimensions and transparency of the selected image file.
+ * 
+ * @param {File} imageFile - The image file to verify.
+ * @returns {Promise<boolean>} A promise that resolves with a boolean indicating whether the image meets the requirements.
+ */
+export async function verifyImage(imageFile) {
   return new Promise((resolve) => {
     const img = new Image();
     img.onload = () => {
+      // Check if image dimensions are 512x512
       if (img.width !== 512 || img.height !== 512) {
         resolve(false);
         return;
       }
 
+      // Create a canvas to check transparency
       const canvas = document.createElement('canvas');
       const ctx = canvas.getContext('2d');
       canvas.width = img.width;
       canvas.height = img.height;
       ctx.drawImage(img, 0, 0);
 
+      // Check transparency in circular region
       const centerX = canvas.width / 2;
       const centerY = canvas.height / 2;
       const radius = canvas.width / 2;
@@ -26,19 +35,17 @@ async function verifyImage(imageFile) {
           const dy = y - centerY;
           if (dx * dx + dy * dy <= radiusSquared) {
             const pixelData = ctx.getImageData(x, y, 1, 1).data;
-            const alpha = pixelData[3];
-            if (alpha === 0) {
+            if (pixelData[3] === 0) { // Check alpha value (transparency)
               resolve(false);
               return;
             }
           }
         }
       }
+      // If image passes all checks, resolve as true
       resolve(true);
     };
     img.onerror = () => resolve(false);
     img.src = URL.createObjectURL(imageFile);
   });
 }
-
-export default verifyImage;
