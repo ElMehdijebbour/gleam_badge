@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/gleam_badge%20/static/css/main.9101bf6b.css",
+    "main.js": "/gleam_badge%20/static/js/main.d080b809.js",
+    "static/js/592.69877c40.chunk.js": "/gleam_badge%20/static/js/592.69877c40.chunk.js",
+    "static/media/base_avatar.png": "/gleam_badge%20/static/media/base_avatar.f9eec3db055ef7155ed7.png",
+    "index.html": "/gleam_badge%20/index.html",
+    "main.9101bf6b.css.map": "/gleam_badge%20/static/css/main.9101bf6b.css.map",
+    "main.d080b809.js.map": "/gleam_badge%20/static/js/main.d080b809.js.map",
+    "592.69877c40.chunk.js.map": "/gleam_badge%20/static/js/592.69877c40.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9101bf6b.css",
+    "static/js/main.d080b809.js"
+  ]
+}
